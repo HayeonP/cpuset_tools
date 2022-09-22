@@ -1,0 +1,7 @@
+backup: # Add all proccesses in root cpuset
+  cpus: 0-9
+
+autoware: 
+  cpus: 10-11
+
+  
