@@ -48,7 +48,7 @@ if [ ${cpuset_name} = 'backup' ]; then
   echo "[STATUS] Move tasks in [root] tasks to [backup]..."
   for T in $(cat /sys/fs/cgroup/cpuset/tasks);
   do
-    ./add_task.sh $T "backup" &> /dev/null    
+    sudo scripts/add_task.sh $T "backup" &> /dev/null 
   done
   echo "[STATUS] Complete"  
 fi
